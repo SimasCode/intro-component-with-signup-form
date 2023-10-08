@@ -1,0 +1,35 @@
+/* common rules - START */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  --red: #ff7979;
+  --green: #38cc8b;
+  --ligth-green: #77e2b3;
+  --blue: #5e54a4;
+  --dark-blue: #3d3b48;
+  --white: #fff;
+  --grayish-blue: #bab7d4;
+  --gray: #dedede;
+}
+
+body {
+  background: var(--red) url('/images/bg-intro-desktop.png') no-repeat;
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* common rules - END */

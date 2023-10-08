@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FONT LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FONT LINK -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text-container">
+      <h1 class="title">Learn to code by watching others</h1>
+      <p class="subtitle">
+        See how experienced developers solve problems in real-time. Watching
+        scripted tutorials is great, but understanding how developers think is
+        invaluable.
+      </p>
+    </div>
+
+    <div class="form-container">
+      <p class="rectangle"><span class="rectangle-fragment">Try it free 7 days</span> then $20/mo. thereafter</p>
+
+      <form class="form" id="form">
+        <div>
+          <input class="input" id="first-name" type="text" placeholder="First Name" />
+          <p class="error" id="error-firstName">First Name cannot be empty</p>
+        </div>
+
+        <div>
+          <input class="input" id="last-name" type="text" placeholder="Last Name" />
+          <p class="error" id="error-lastName">Last Name cannot be empty</p>
+        </div>
+
+        <div>
+          <input class="input" id="email" type="email" placeholder="Email Address" />
+          <p class="error" id="error-email">Email cannot be empty</p>
+        </div>
+
+        <div>
+          <input class="input" id="password" type="password" placeholder="Password" />
+          <p class="error" id="error-password">Password cannot be empty</p>
+        </div>
+
+        <button class="btn" type="submit">Claim your free trial</button>
+        <p class="term">By clicking the button, you are agreeing to our <span class="term-fragment">Terms and
+            Services</span></p>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://www.linkedin.com/in/simonas-janulaitis/">Simonas Janulaitis</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
