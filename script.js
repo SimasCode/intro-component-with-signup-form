@@ -25,7 +25,11 @@ form.addEventListener('submit', (event) => {
 });
 
 function emptyValues(firstName, lastName, email, password) {
-  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  console.log('email ===', email);
+
+  const emailRegex =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
   // First Name
   if (firstName === '') {
     erorrFirstName.classList.add('show');
@@ -45,10 +49,11 @@ function emptyValues(firstName, lastName, email, password) {
   }
 
   // Email
-  if (email === '') {
+  console.log('emailRegex.test(email) ===', emailRegex.test(email));
+  if (email == '') {
     erorrEmail.classList.add('show');
     emailInput.classList.add('red-border');
-  } else if (!email.match(emailRegex)) {
+  } else if (!emailRegex.test(email)) {
     erorrEmail.classList.add('show');
     emailInput.classList.add('red-border');
     erorrEmail.textContent = 'Looks like this is not an email';
